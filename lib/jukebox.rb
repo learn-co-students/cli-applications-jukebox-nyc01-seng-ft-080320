@@ -12,10 +12,10 @@ songs = [
 
 def help 
   puts  "I accept the following commands:"
-  puts  "- help: displays this help message"
-  puts   "- list: displays a list of songs you can play"
-  puts  "- play: lets you choose a song to play"
-  puts  "- exit: exits this program" 
+  puts  "- help : displays this help message"
+  puts  "- list : displays a list of songs you can play"
+  puts  "- play : lets you choose a song to play"
+  puts  "- exit : exits this program" 
 end 
 
 def list(songs)
@@ -34,11 +34,11 @@ def play(songs)
       puts "Invalid input, please try again."
     end
   end
-end 
+
 
 def exit_jukebox
-   puts "Goodbye"
- end
+  puts "Goodbye"
+end
  
 # def run(songs)
 #   loop do   
@@ -58,4 +58,3 @@ def exit_jukebox
 #       puts "Invalid entry"
 #     end 
 # end 
- 
