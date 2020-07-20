@@ -21,6 +21,7 @@ end
 def list(songs)
   songs.each_with_index do |song, index|
   puts "#{index + 1}. #{song}"
+  end
 end
 
 def play(songs)
@@ -33,28 +34,29 @@ def play(songs)
   else
       puts "Invalid input, please try again."
     end
-  end
 
+end 
 
 def exit_jukebox
   puts "Goodbye"
 end
  
-# def run(songs)
-#   loop do   
-#   puts "Please enter a command:"
-#   reply = gets.strip
-#   case reply 
-#     when "list"
-#       list(songs)
-#     when "play"
-#       play(songs)
-#     when "help"
-#       help 
-#     when "exit"
-#       exit_jukebox
-#       break 
-#     else 
-#       puts "Invalid entry"
-#     end 
-# end 
+def run(songs)
+  loop do   
+  puts "Please enter a command:"
+  reply = gets.strip
+  case reply 
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help 
+    when "exit"
+      exit_jukebox
+      break 
+    else 
+      puts "Invalid entry"
+    end 
+  end
+end 
